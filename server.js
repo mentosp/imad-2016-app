@@ -13,6 +13,16 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+
+app.get('/m1', function (req, res) {
+    res.send('minal is on 1st page');
+});
+
+
+app.get('/m2', function (req, res) {
+    res.send('minal is on 2nd page');
+});
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
