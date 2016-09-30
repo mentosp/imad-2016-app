@@ -15,7 +15,7 @@ app.get('/ui/style.css', function (req, res) {
 
 
 app.get('/m1', function (req, res) {
-    res.send('minal is on 1st page');
+  res.sendFile(path.join(__dirname, 'ui', 'm1.html'));
 });
 
 
